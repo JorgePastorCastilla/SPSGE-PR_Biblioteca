@@ -26,7 +26,6 @@ class Biblioteca():
         for publicacion in self.publicaciones:
             if(publicacion.referencia == referencia):
                 return publicacion
-            else:
-                print("No se ha encontrado ninguna publicacion con esta referencia({})".format(referencia))
+        print("No se ha encontrado ninguna publicacion con esta referencia({})".format(referencia))
     def get_cantidad(self):
         return len(self.publicaciones)

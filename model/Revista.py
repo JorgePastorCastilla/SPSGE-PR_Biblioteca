@@ -2,7 +2,8 @@ from model.Publicacion import Publicacion
 
 
 class Revista(Publicacion):
-    def __init__(self,any,nro):
+    def __init__(self,any,nro,referencia, titol):
+        Publicacion.__init__(self, referencia, titol)
         self.any = any
         self.nro = nro
 

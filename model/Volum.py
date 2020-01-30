@@ -2,7 +2,8 @@ from model.Obra import Obra
 
 
 class Volum(Obra):
-    def __init__(self,nro):
+    def __init__(self,nro,autor,nrePags,referencia,titol):
+        Obra.__init__(self,autor,nrePags,referencia,titol)
         self.nro = nro
 
     def get_nro(self):

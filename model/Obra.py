@@ -2,7 +2,8 @@ from model.Publicacion import Publicacion
 
 
 class Obra(Publicacion):
-    def __init__(self,autor,nrePags):
+    def __init__(self,autor,nrePags,referencia,titol):
+        Publicacion.__init__(self,referencia,titol)
         self.autor = autor
         self.nrePags = nrePags
 
